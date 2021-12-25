@@ -1,0 +1,8 @@
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\bin\Debug\HomeWC_2.exe.config
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\bin\Debug\HomeWC_2.exe
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\bin\Debug\HomeWC_2.pdb
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\obj\Debug\HomeWC_2.csproj.AssemblyReference.cache
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\obj\Debug\HomeWC_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\obj\Debug\HomeWC_2.csproj.CoreCompileInputs.cache
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\obj\Debug\HomeWC_2.exe
+C:\Users\korsh\source\repos\HomeWC_2\HomeWC_2\obj\Debug\HomeWC_2.pdb
