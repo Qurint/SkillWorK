@@ -1,0 +1,8 @@
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\bin\Debug\HomeWork_3.exe.config
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\bin\Debug\HomeWork_3.exe
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\bin\Debug\HomeWork_3.pdb
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\obj\Debug\HomeWork_3.csproj.AssemblyReference.cache
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\obj\Debug\HomeWork_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\obj\Debug\HomeWork_3.csproj.CoreCompileInputs.cache
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\obj\Debug\HomeWork_3.exe
+C:\Users\korsh\OneDrive\Документы\GitHub\SkillWorK\HomeWork_3\HomeWork_3\obj\Debug\HomeWork_3.pdb
