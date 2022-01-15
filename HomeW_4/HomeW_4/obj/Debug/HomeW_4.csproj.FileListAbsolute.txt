@@ -1,0 +1,8 @@
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\bin\Debug\HomeW_4.exe.config
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\bin\Debug\HomeW_4.exe
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\bin\Debug\HomeW_4.pdb
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\obj\Debug\HomeW_4.csproj.AssemblyReference.cache
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\obj\Debug\HomeW_4.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\obj\Debug\HomeW_4.csproj.CoreCompileInputs.cache
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\obj\Debug\HomeW_4.exe
+C:\Users\korsh\source\repos\HomeW_4\HomeW_4\obj\Debug\HomeW_4.pdb
