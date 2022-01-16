@@ -1,0 +1,8 @@
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\bin\Debug\Work_1.exe.config
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\bin\Debug\Work_1.exe
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\bin\Debug\Work_1.pdb
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\obj\Debug\Work_1.csproj.AssemblyReference.cache
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\obj\Debug\Work_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\obj\Debug\Work_1.csproj.CoreCompileInputs.cache
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\obj\Debug\Work_1.exe
+C:\Users\korsh\Documents\GitHub\SkillWorK\Module_4_HomeWork\Work_1\obj\Debug\Work_1.pdb
