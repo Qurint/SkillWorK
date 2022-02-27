@@ -1,0 +1,8 @@
+C:\Users\korsh\source\repos\Module_6\AddPerson\bin\Debug\AddPerson.exe.config
+C:\Users\korsh\source\repos\Module_6\AddPerson\bin\Debug\AddPerson.exe
+C:\Users\korsh\source\repos\Module_6\AddPerson\bin\Debug\AddPerson.pdb
+C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.csproj.AssemblyReference.cache
+C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.csproj.CoreCompileInputs.cache
+C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.exe
+C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.pdb
