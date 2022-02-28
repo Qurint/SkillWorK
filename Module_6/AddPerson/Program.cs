@@ -5,41 +5,41 @@ namespace AddPerson
 {
     internal class Program
     {
-        static int _agePerson;
-        static int _dateOfBirth;
-        static int _dayOfBirth;
-        static int _mounthOfBirth;
-        static int _yearOfBirth;
-        static int _badNum;
-        static int _growth;
+        static int agePerson;
+        static int dateOfBirth;
+        static int dayOfBirth;
+        static int mounthOfBirth;
+        static int yearOfBirth;
+        static int badNum;
+        static int growth;
 
-        static int _timeAddTextHour;
-        static int _timeAddTextMinute;
-        static int _timeAddTextSecond;
-        static int _timeAddTextMonth;
-        static int _timeAddTextYear;
-        static int _timeAddTextDay;
+        static int timeAddTextHour;
+        static int timeAddTextMinute;
+        static int timeAddTextSecond;
+        static int timeAddTextMonth;
+        static int timeAddTextYear;
+        static int timeAddTextDay;
 
-        static string _down = "\n";
-        static string[] _words;
-        static string _text;
-        static string _fullNamePerson;
-        static string _placeOfBirth;
-        static string _next;
-        static string[] _lineText;
+        static string down = "\n";
+        static string[] words;
+        static string text;
+        static string fullNamePerson;
+        static string placeOfBirth;
+        static string next;
+        static string[] lineText;
         static void Main(string[] args)
         {
             WriteLine($"Привет!, скажите пожалуйста, вы хотите внести сотрудника или прочитать имеющейся список ? \nДля выбора введите -r- для чтения и -w- для записи");
 
             for (; ; )
             {
-                _next = ReadLine();
-                if (_next == "r" || _next == "R")
+                next = ReadLine();
+                if (next == "r" || next == "R")
                 {
                     ReadDocument();
                     break;
                 }
-                else if (_next == "w" || _next == "W")
+                else if (next == "w" || next == "W")
                 {
                     IntroductionData();
                     break;
@@ -55,15 +55,15 @@ namespace AddPerson
         {
             if (Exists(@"d:\PersonDocument.txt"))
             {
-                _lineText = ReadAllLines(@"d:\PersonDocument.txt");
-                for(int a = 0;a < _lineText.Length * 6;a++ )
+                lineText = ReadAllLines(@"d:\PersonDocument.txt");
+                for(int a = 0;a < lineText.Length * 6;a++ )
                 {
-                    if (_lineText.Length - 1 >= a) 
-                    {
-                        _words = _lineText[a].Split('#');
-                    }
-              
-                    Write($" {_words[a]}");
+                    if (lineText.Length - 1 >= a)  
+                    words = lineText[a].Split('#');
+                    
+                    if (words.Length - 1 >= a)
+                    Write($" {words[a]}");
+
                     if(a == 5)
                     {
                         WriteLine();
@@ -76,12 +76,12 @@ namespace AddPerson
                 WriteLine($"Прошу прощения, но файла не существует, хотите создать его или выйти для создания нажмите -w- для выхода -e-");
                 for (; ; )
                 {
-                    _next = ReadLine();
-                    if (_next == "e" || _next == "E")
+                    next = ReadLine();
+                    if (next == "e" || next == "E")
                     {
                         break;
                     }
-                    else if (_next == "w" || _next == "W")
+                    else if (next == "w" || next == "W")
                     {
                         IntroductionData();
                         break;
@@ -100,58 +100,58 @@ namespace AddPerson
             WriteLine($"---Для начала работы нажмите любую клавишу---");
             ReadKey();
             WriteLine($"Для начала давайте узнаем как зовут везунчика,\nвведите ФИО разделяя пробелом");
-            _fullNamePerson = ReadLine();
+            fullNamePerson = ReadLine();
             WriteLine($"Хорошо!, теперь давай узнаем дату рождения нового сотрудника,\nвведите дату рождения слитно, с начала - день месяц год например 10122001");
-            _dateOfBirth = ToInt32(ReadLine());
+            dateOfBirth = ToInt32(ReadLine());
 
-            _dayOfBirth = _dateOfBirth / 1000000;
-            _yearOfBirth = _dateOfBirth % 10000;
-            _badNum = _dateOfBirth % 1000000;
-            _mounthOfBirth = _badNum / 10000;
+            dayOfBirth = dateOfBirth / 1000000;
+            yearOfBirth = dateOfBirth % 10000;
+            badNum = dateOfBirth % 1000000;
+            mounthOfBirth = badNum / 10000;
 
-            _timeAddTextHour = System.DateTime.Now.Hour;
-            _timeAddTextMinute = System.DateTime.Now.Minute;
-            _timeAddTextSecond = System.DateTime.Now.Second;
-            _timeAddTextDay = System.DateTime.Now.Day;
-            _timeAddTextMonth = System.DateTime.Now.Month;
-            _timeAddTextYear = System.DateTime.Now.Year;
+            timeAddTextHour = System.DateTime.Now.Hour;
+            timeAddTextMinute = System.DateTime.Now.Minute;
+            timeAddTextSecond = System.DateTime.Now.Second;
+            timeAddTextDay = System.DateTime.Now.Day;
+            timeAddTextMonth = System.DateTime.Now.Month;
+            timeAddTextYear = System.DateTime.Now.Year;
 
-            if(_timeAddTextMonth == _mounthOfBirth)
+            if(timeAddTextMonth == mounthOfBirth)
             {
-                if(_timeAddTextDay >= _dayOfBirth)
+                if(timeAddTextDay >= dayOfBirth)
                 {
-                 _agePerson = _timeAddTextYear - _yearOfBirth;
+                 agePerson = timeAddTextYear - yearOfBirth;
                 }
-            }else if(_timeAddTextMonth > _mounthOfBirth)
+            }else if(timeAddTextMonth > mounthOfBirth)
             {
-                _agePerson = _timeAddTextYear - _yearOfBirth;
+                agePerson = timeAddTextYear - yearOfBirth;
             }
             else
             {
-                _agePerson = _timeAddTextYear - _yearOfBirth - 1;
+                agePerson = timeAddTextYear - yearOfBirth - 1;
             }
 
             WriteLine($"Класс, теперь нужен рост нашего героя, вдруг в нашем царстве он не пройдет в дверь),\nвведите рост в мм");
-            _growth = ToInt32(ReadLine());
+            growth = ToInt32(ReadLine());
             WriteLine($"Вот и все, осталось лишь ввести город, где родился наш человечек,\nвведите город с заглавной буковки(Ох уж этот Русский)");
-            _placeOfBirth = ReadLine();
+            placeOfBirth = ReadLine();
             ReconciliationData();
         }
         static void ReconciliationData()
         {
             WriteLine($"Теперь давай сверим данные \n Нажми любую клавишу если готов");
             ReadKey();
-            WriteLine($"ФИО {_fullNamePerson} \nДата рождения {_dayOfBirth}.{_mounthOfBirth}.{_yearOfBirth} \nВозраст получается {_agePerson} \nРост {_growth} \nИ родился он в {_placeOfBirth}");
+            WriteLine($"ФИО {fullNamePerson} \nДата рождения {dayOfBirth}.{mounthOfBirth}.{yearOfBirth} \nВозраст получается {agePerson} \nРост {growth} \nИ родился он в {placeOfBirth}");
             WriteLine($"Все верно или хотите повторить ввод данных ? \nЕсли все верно нажмите -y- , иначе -n-");
             for (; ; )
             {
-                _next = ReadLine();
-                if (_next == "y")
+                next = ReadLine();
+                if (next == "y")
                 {
                     CreatingDocument();
                     break;
                 }
-                else if (_next == "n")
+                else if (next == "n")
                 {
                     IntroductionData();
                     break;
@@ -164,34 +164,34 @@ namespace AddPerson
         }
         static void CreatingDocument()
         {
-            int _iD = 0;
+            int iD = 0;
 
             if (Exists(@"d:\PersonDocument.txt"))
             {
-                _text = ReadAllText(@"d:\PersonDocument.txt");
-                _lineText = ReadAllLines(@"d:\PersonDocument.txt");
+                text = ReadAllText(@"d:\PersonDocument.txt");
+                lineText = ReadAllLines(@"d:\PersonDocument.txt");
 
-                _words = _lineText[_lineText.Length - 1].Split('#');
+                words = lineText[lineText.Length - 1].Split('#');
 
-                if (ToInt32(_words[0]) > 0)
+                if (ToInt32(words[0]) > 0)
                 {
-                    _iD = ToInt32(_words[0]) + 1;
+                    iD = ToInt32(words[0]) + 1;
                 }
                 else
                 {
-                    _iD = 1;
-                    _down = null;
+                    iD = 1;
+                    down = null;
                 }
 
             }
 
-            _text += $"{_down}{_iD}#{_timeAddTextDay}.{_timeAddTextMonth}.{_timeAddTextYear}#{_fullNamePerson}" +
-                $" {_timeAddTextHour}:{_timeAddTextMinute}:{_timeAddTextSecond}#{_agePerson}#{_growth}#{_dayOfBirth}.{_mounthOfBirth}.{_yearOfBirth}#{_placeOfBirth}";
+            text += $"{down}{iD}#{timeAddTextDay}.{timeAddTextMonth}.{timeAddTextYear}#{fullNamePerson}" +
+                $"#{timeAddTextHour}:{timeAddTextMinute}:{timeAddTextSecond}#{agePerson}#{growth}#{dayOfBirth}.{mounthOfBirth}.{yearOfBirth}#{placeOfBirth}";
 
-            WriteLine(_text);
+            WriteLine(text);
             ReadKey();
 
-            WriteAllText (@"d:\PersonDocument.txt",_text);
+            WriteAllText (@"d:\PersonDocument.txt",text);
         }
     }
 }

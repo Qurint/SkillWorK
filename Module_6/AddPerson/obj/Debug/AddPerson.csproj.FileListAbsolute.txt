@@ -6,3 +6,11 @@ C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.csproj.Sugges
 C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.csproj.CoreCompileInputs.cache
 C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.exe
 C:\Users\korsh\source\repos\Module_6\AddPerson\obj\Debug\AddPerson.pdb
+E:\GitHub\Module_6\AddPerson\obj\Debug\AddPerson.csproj.AssemblyReference.cache
+E:\GitHub\Module_6\AddPerson\obj\Debug\AddPerson.csproj.SuggestedBindingRedirects.cache
+E:\GitHub\Module_6\AddPerson\obj\Debug\AddPerson.csproj.CoreCompileInputs.cache
+E:\GitHub\Module_6\AddPerson\obj\Debug\AddPerson.exe
+E:\GitHub\Module_6\AddPerson\obj\Debug\AddPerson.pdb
+E:\GitHub\Module_6\AddPerson\bin\Debug\AddPerson.exe.config
+E:\GitHub\Module_6\AddPerson\bin\Debug\AddPerson.exe
+E:\GitHub\Module_6\AddPerson\bin\Debug\AddPerson.pdb
