@@ -1,0 +1,8 @@
+C:\Users\korsh\source\repos\Module_7\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\korsh\source\repos\Module_7\Program\obj\Debug\Program.csproj.SuggestedBindingRedirects.cache
+C:\Users\korsh\source\repos\Module_7\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\korsh\source\repos\Module_7\Program\bin\Debug\Program.exe.config
+C:\Users\korsh\source\repos\Module_7\Program\bin\Debug\Program.exe
+C:\Users\korsh\source\repos\Module_7\Program\bin\Debug\Program.pdb
+C:\Users\korsh\source\repos\Module_7\Program\obj\Debug\Program.exe
+C:\Users\korsh\source\repos\Module_7\Program\obj\Debug\Program.pdb
