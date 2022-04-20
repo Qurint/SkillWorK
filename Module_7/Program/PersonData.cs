@@ -29,6 +29,14 @@
                 $"\nРост: {_growth}\nДата рождения: {_dateOfBirth}\nМесто рождения: {_placeOfBirth} "+
                 $"\nВремя создания документа: {_timeCreate}\nДата создания документа: {_dataCreate}";
         }
+        public string FirstName()
+        {
+            return _fullName;
+        }
+        public string DataCreate()
+        {
+            return _dataCreate;
+        }
 
     }
 }

@@ -10,7 +10,7 @@ namespace Program
 
         public void ReadDataPerson()
         {
-            string[] _indexPerson = new string [50];
+            string[] _indexPerson = new string [10];
             string[] _fullName = new string [50];
             string[] _age = new string[50];
             string[] _growth = new string[50];
@@ -19,10 +19,9 @@ namespace Program
             string[] _timeCreate = new string[50];
             string[] _dataCreate = new string[50];
             int _index = 0;
-
-
-            WriteLine("Какой именно сотрудник вас интересует, введите его номер");
-            _index = ToInt32(ReadLine());
+            string _name;
+            string _data;
+            string _next;
 
             _fileDataPerson = ReadAllText(@"D:/PersonDocument.txt");
 
@@ -69,12 +68,69 @@ namespace Program
             }
 
               // создаем сотрудника с привязкой к данным
-            Persons personData = new Persons(// Инициализация сотрудников, возможность полного создания списка
-                new PersonData(_indexPerson[_index - 1], _fullName[_index - 1], _age[_index - 1], _growth[_index - 1],
-                _dateOfBirth[_index - 1], _placeOfBirth[_index - 1], _timeCreate[_index - 1], _dataCreate[_index - 1])
+            Persons personData = new Persons(
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData(),
+                new PersonData()
                 );
 
-            WriteLine(personData[0]);
+            for(int i = 0; i < _indexPerson.Length; i++)
+            {
+                personData[i] = new PersonData(_indexPerson[i], _fullName[i], _age[i], _growth[i],
+                _dateOfBirth[i], _placeOfBirth[i], _timeCreate[i], _dataCreate[i]);
+            }
+            WriteLine("Какой именно будем искать сотрудника -n- если имя -d- если дата создания документа -i- если индекс");
+            for (; ; )
+            {
+                _next = ReadLine();
+                if (_next == "n" || _next == "N")
+                {
+                    WriteLine("Введите имя сотрудника как было зарегистрировано");
+                    _name = ReadLine();
+                    for (int i = 0; i < _indexPerson.Length; i++)
+                    {
+                        if (personData[i].FirstName() == _name)
+                        {
+                            WriteLine(personData[i].Print());
+                            break;
+                        }
+                    }
+                    break;
+                }
+                else if (_next == "i" || _next == "i")
+                {
+                    WriteLine("Введите номер сотрудника");
+                    _index = ToInt32(ReadLine());
+                    WriteLine(personData[_index - 1].Print());
+                    break;
+                }
+                else if (_next == "d" || _next == "d")
+                {
+                    WriteLine("Введите дату как было зарегистрировано, пример 20.4.2022");
+                    _data = ReadLine();
+                    for (int i = 0; i < _indexPerson.Length; i++)
+                    {
+                        if (personData[i].DataCreate() == _data)
+                        {
+                            WriteLine(personData[i].Print());
+                            break;
+                        }
+                    }
+                    break;
+                }
+                else
+                {
+                    WriteLine($"Какой именно будем искать сотрудника -n- если имя -d- если дата создания документа -i- если индекс");
+                }
+            } // проверка и сортировка сотрудника по выброному поиску 
             ReadKey();
         }
 
